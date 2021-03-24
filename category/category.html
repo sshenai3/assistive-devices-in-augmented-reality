@@ -1,1 +1,715 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>adl-category</title>
+        <link rel="stylesheet" href="./style/style.css"/>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poppins">
+        
+    </head>
 
+    <body>
+
+<div class="parallax-landing-container">
+
+    <div id="body-container">
+        
+        <div class="container-header"></div>
+
+        <div class="title-row" style="margin: 50px 0;"><h1>Meal Preparation</h1></div>
+
+        <!---
+
+        <div id="container-btn">
+            
+            
+            <div class="container-text" style=";"><h3>Biomechanical area of need</h3></div>
+
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+
+            <button class="btn" onclick="filterSelection('muscle')">Muscle Weakness</button>
+            <button class="btn" onclick="filterSelection('tremors')">Tremors</button>
+            <button class="btn" onclick="filterSelection('spasticity')">Spasticity</button>
+            <button class="btn" onclick="filterSelection('hypotonia')">Hypotonia</button>
+            <button class="btn" onclick="filterSelection('chronic')">Chronic pain</button>
+
+        </div>
+
+        <div class="container-filter">
+
+            <div class="filterProd muscle">
+                <div class="prod-img">
+                    <img src=""></img>
+                </div>
+                
+                <div class="product-name">
+                    <h2>Cook Muscle</h2>
+                </div>
+
+                <div class="product-code">
+                    <h4>Product Code</h4>
+                </div>
+
+                <div class="product-des">
+                    <p>This is a Product Description, this is a brief Product Description.</p>
+                </div>
+
+                <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
+
+                <hr class="cat-separation">
+
+                <div class="product-material">
+                    <h4>Materials/ Dimentsions/ Weight</h4>
+                </div>
+            </div>
+
+
+            <div class="filterProd tremors">
+                <div class="prod-img">
+                    <img src=""></img>
+                </div>
+                
+                <div class="product-name">
+                    <h2>Cook Tremors</h2>
+                </div>
+
+                <div class="product-code">
+                    <h4>Product Code</h4>
+                </div>
+
+                <div class="product-des">
+                    <p>This is a Product Description, this is a brief Product Description.</p>
+                </div>
+
+                <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
+
+                <hr class="cat-separation">
+
+                <div class="product-material">
+                    <h4>Materials/ Dimentsions/ Weight</h4>
+                </div>
+            </div>
+
+
+            <div class="filterProd spasticity">
+                <div class="prod-img">
+                    <img src=""></img>
+                </div>
+                
+                <div class="product-name">
+                    <h2>Cook Spasticity</h2>
+                </div>
+
+                <div class="product-code">
+                    <h4>Product Code</h4>
+                </div>
+
+                <div class="product-des">
+                    <p>This is a Product Description, this is a brief Product Description.</p>
+                </div>
+
+                <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
+
+                <hr class="cat-separation">
+
+                <div class="product-material">
+                    <h4>Materials/ Dimentsions/ Weight</h4>
+                </div>
+            </div>
+
+
+            <div class="filterProd hypotonia">
+                <div class="prod-img">
+                    <img src=""></img>
+                </div>
+                
+                <div class="product-name">
+                    <h2>Cook Hypotonia</h2>
+                </div>
+
+                <div class="product-code">
+                    <h4>Product Code</h4>
+                </div>
+
+                <div class="product-des">
+                    <p>This is a Product Description, this is a brief Product Description.</p>
+                </div>
+
+                <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
+
+                <hr class="cat-separation">
+
+                <div class="product-material">
+                    <h4>Materials/ Dimentsions/ Weight</h4>
+                </div>
+            </div>
+
+
+            <div class="filterProd chronic">
+                <div class="prod-img">
+                    <img src=""></img>
+                </div>
+                
+                <div class="product-name">
+                    <h2>Cook Chronic</h2>
+                </div>
+
+                <div class="product-code">
+                    <h4>Product Code</h4>
+                </div>
+
+                <div class="product-des">
+                    <p>This is a Product Description, this is a brief Product Description.</p>
+                </div>
+
+                <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
+
+                <hr class="cat-separation">
+
+                <div class="product-material">
+                    <h4>Materials/ Dimentsions/ Weight</h4>
+                </div>
+            </div>
+
+
+            <div class="filterProd muscle">
+                <div class="prod-img">
+                    <img src=""></img>
+                </div>
+                
+                <div class="product-name">
+                    <h2>Cook Muscle</h2>
+                </div>
+
+                <div class="product-code">
+                    <h4>Product Code</h4>
+                </div>
+
+                <div class="product-des">
+                    <p>This is a Product Description, this is a brief Product Description.</p>
+                </div>
+
+                <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
+
+                <hr class="cat-separation">
+
+                <div class="product-material">
+                    <h4>Materials/ Dimentsions/ Weight</h4>
+                </div>
+            </div>
+
+
+        </div>
+
+    -->
+
+<!--sub-container-->
+        <div class="sub-container">
+
+            <div class="sub-bar">
+                <button class="sub-button tablink btn-color" onclick="openCity(event,'Cooking')">Cooking</button>
+                <button class="sub-button tablink" onclick="openCity(event,'Eating')">Eating</button>
+                <button class="sub-button tablink" onclick="openCity(event,'Drinking')">Drinking</button>
+                <button class="sub-button tablink" onclick="openCity(event,'Cleaning')">Cleaning</button>
+            </div>
+
+            <!--sub-sub-links-->
+
+            <div id="container-btn" style="margin: 50px 0;">
+            
+            
+                <div class="container-text" style=";"><h3>Biomechanical area of need</h3></div>
+    
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    
+                <button class="btn" onclick="filterSelection('muscle')">Muscle Weakness</button>
+                <button class="btn" onclick="filterSelection('tremors')">Tremors</button>
+                <button class="btn" onclick="filterSelection('spasticity')">Spasticity</button>
+                <button class="btn" onclick="filterSelection('hypotonia')">Hypotonia</button>
+                <button class="btn" onclick="filterSelection('chronic')">Chronic pain</button>
+    
+            </div>
+
+            <!--cooking-->
+
+            <div id="Cooking" class="sub-container meal">
+                
+        
+                <div class="container-filter">
+        
+                    <div class="filterProd muscle">
+                        <div class="prod-img">
+                            <img src=""></img>
+                        </div>
+                        
+                        <div class="product-name">
+                            <h2>Cook Muscle</h2>
+                        </div>
+        
+                        <div class="product-code">
+                            <h4>Product Code</h4>
+                        </div>
+        
+                        <div class="product-des">
+                            <p>This is a Product Description, this is a brief Product Description.</p>
+                        </div>
+        
+                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
+        
+                        <hr class="cat-separation">
+        
+                        <div class="product-material">
+                            <h4>Materials/ Dimentsions/ Weight</h4>
+                        </div>
+                    </div>
+        
+        
+                    <div class="filterProd tremors">
+                        <div class="prod-img">
+                            <img src=""></img>
+                        </div>
+                        
+                        <div class="product-name">
+                            <h2>Cook Tremors</h2>
+                        </div>
+        
+                        <div class="product-code">
+                            <h4>Product Code</h4>
+                        </div>
+        
+                        <div class="product-des">
+                            <p>This is a Product Description, this is a brief Product Description.</p>
+                        </div>
+        
+                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
+        
+                        <hr class="cat-separation">
+        
+                        <div class="product-material">
+                            <h4>Materials/ Dimentsions/ Weight</h4>
+                        </div>
+                    </div>
+        
+        
+                    <div class="filterProd spasticity">
+                        <div class="prod-img">
+                            <img src=""></img>
+                        </div>
+                        
+                        <div class="product-name">
+                            <h2>Cook Spasticity</h2>
+                        </div>
+        
+                        <div class="product-code">
+                            <h4>Product Code</h4>
+                        </div>
+        
+                        <div class="product-des">
+                            <p>This is a Product Description, this is a brief Product Description.</p>
+                        </div>
+        
+                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
+        
+                        <hr class="cat-separation">
+        
+                        <div class="product-material">
+                            <h4>Materials/ Dimentsions/ Weight</h4>
+                        </div>
+                    </div>
+        
+        
+                    <div class="filterProd hypotonia">
+                        <div class="prod-img">
+                            <img src=""></img>
+                        </div>
+                        
+                        <div class="product-name">
+                            <h2>Cook Hypotonia</h2>
+                        </div>
+        
+                        <div class="product-code">
+                            <h4>Product Code</h4>
+                        </div>
+        
+                        <div class="product-des">
+                            <p>This is a Product Description, this is a brief Product Description.</p>
+                        </div>
+        
+                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
+        
+                        <hr class="cat-separation">
+        
+                        <div class="product-material">
+                            <h4>Materials/ Dimentsions/ Weight</h4>
+                        </div>
+                    </div>
+        
+        
+                    <div class="filterProd chronic">
+                        <div class="prod-img">
+                            <img src=""></img>
+                        </div>
+                        
+                        <div class="product-name">
+                            <h2>Cook Chronic</h2>
+                        </div>
+        
+                        <div class="product-code">
+                            <h4>Product Code</h4>
+                        </div>
+        
+                        <div class="product-des">
+                            <p>This is a Product Description, this is a brief Product Description.</p>
+                        </div>
+        
+                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
+        
+                        <hr class="cat-separation">
+        
+                        <div class="product-material">
+                            <h4>Materials/ Dimentsions/ Weight</h4>
+                        </div>
+                    </div>
+        
+        
+                    <div class="filterProd muscle">
+                        <div class="prod-img">
+                            <img src=""></img>
+                        </div>
+                        
+                        <div class="product-name">
+                            <h2>Cook Muscle</h2>
+                        </div>
+        
+                        <div class="product-code">
+                            <h4>Product Code</h4>
+                        </div>
+        
+                        <div class="product-des">
+                            <p>This is a Product Description, this is a brief Product Description.</p>
+                        </div>
+        
+                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
+        
+                        <hr class="cat-separation">
+        
+                        <div class="product-material">
+                            <h4>Materials/ Dimentsions/ Weight</h4>
+                        </div>
+                    </div>
+        
+        
+                </div>
+            </div>
+
+
+            <!--eating-->
+
+            <div id="Eating" class="sub-container meal" style="display:none">
+                        
+                <div class="container-filter">
+        
+                    <div class="filterProd muscle">
+                        <div class="prod-img">
+                            <img src=""></img>
+                        </div>
+                        
+                        <div class="product-name">
+                            <h2>Eat Muscle</h2>
+                        </div>
+        
+                        <div class="product-code">
+                            <h4>Product Code</h4>
+                        </div>
+        
+                        <div class="product-des">
+                            <p>This is a Product Description, this is a brief Product Description.</p>
+                        </div>
+        
+                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
+        
+                        <hr class="cat-separation">
+        
+                        <div class="product-material">
+                            <h4>Materials/ Dimentsions/ Weight</h4>
+                        </div>
+                    </div>
+        
+        
+                    <div class="filterProd tremors">
+                        <div class="prod-img">
+                            <img src=""></img>
+                        </div>
+                        
+                        <div class="product-name">
+                            <h2>Eat Tremors</h2>
+                        </div>
+        
+                        <div class="product-code">
+                            <h4>Product Code</h4>
+                        </div>
+        
+                        <div class="product-des">
+                            <p>This is a Product Description, this is a brief Product Description.</p>
+                        </div>
+        
+                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
+        
+                        <hr class="cat-separation">
+        
+                        <div class="product-material">
+                            <h4>Materials/ Dimentsions/ Weight</h4>
+                        </div>
+                    </div>
+        
+        
+                    <div class="filterProd spasticity">
+                        <div class="prod-img">
+                            <img src=""></img>
+                        </div>
+                        
+                        <div class="product-name">
+                            <h2>Eat Spasticity</h2>
+                        </div>
+        
+                        <div class="product-code">
+                            <h4>Product Code</h4>
+                        </div>
+        
+                        <div class="product-des">
+                            <p>This is a Product Description, this is a brief Product Description.</p>
+                        </div>
+        
+                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
+        
+                        <hr class="cat-separation">
+        
+                        <div class="product-material">
+                            <h4>Materials/ Dimentsions/ Weight</h4>
+                        </div>
+                    </div>
+        
+        
+                    <div class="filterProd hypotonia">
+                        <div class="prod-img">
+                            <img src=""></img>
+                        </div>
+                        
+                        <div class="product-name">
+                            <h2>Eat Hypotonia</h2>
+                        </div>
+        
+                        <div class="product-code">
+                            <h4>Product Code</h4>
+                        </div>
+        
+                        <div class="product-des">
+                            <p>This is a Product Description, this is a brief Product Description.</p>
+                        </div>
+        
+                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
+        
+                        <hr class="cat-separation">
+        
+                        <div class="product-material">
+                            <h4>Materials/ Dimentsions/ Weight</h4>
+                        </div>
+                    </div>
+        
+        
+                    <div class="filterProd chronic">
+                        <div class="prod-img">
+                            <img src=""></img>
+                        </div>
+                        
+                        <div class="product-name">
+                            <h2>Eat Chronic</h2>
+                        </div>
+        
+                        <div class="product-code">
+                            <h4>Product Code</h4>
+                        </div>
+        
+                        <div class="product-des">
+                            <p>This is a Product Description, this is a brief Product Description.</p>
+                        </div>
+        
+                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
+        
+                        <hr class="cat-separation">
+        
+                        <div class="product-material">
+                            <h4>Materials/ Dimentsions/ Weight</h4>
+                        </div>
+                    </div>
+        
+        
+                    <div class="filterProd muscle">
+                        <div class="prod-img">
+                            <img src=""></img>
+                        </div>
+                        
+                        <div class="product-name">
+                            <h2>Eat Muscle</h2>
+                        </div>
+        
+                        <div class="product-code">
+                            <h4>Product Code</h4>
+                        </div>
+        
+                        <div class="product-des">
+                            <p>This is a Product Description, this is a brief Product Description.</p>
+                        </div>
+        
+                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
+        
+                        <hr class="cat-separation">
+        
+                        <div class="product-material">
+                            <h4>Materials/ Dimentsions/ Weight</h4>
+                        </div>
+                    </div>
+        
+        
+                </div>
+            </div>
+
+
+            <!--drinking-->
+
+            <div id="Drinking" class="sub-container meal" style="display:none">
+                <h2>Drinking</h2>
+                <p>London is the capital city of England.</p>
+            </div>
+
+
+
+            <!--cleaning-->
+
+            <div id="Cleaning" class="sub-container meal" style="display:none">
+                <h2>Cleaning</h2>
+                <p>London is the capital city of England.</p>
+            </div>
+
+        </div>
+
+
+    
+    </div>
+
+    <div class="container-footer"></div>
+
+</div>
+
+<!--script for filter buttons-->
+<script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterProd");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("container-btn");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+
+    <!--script for filter buttons - eating-->
+<script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterProd");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("container-btn");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+    
+
+<!--script for sub-container-->
+<script>
+    function openCity(evt, mealName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("meal");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" btn-color", "");
+      }
+      document.getElementById(mealName).style.display = "block";
+      evt.currentTarget.className += " btn-color";
+    }
+</script>
+
+    </body>
