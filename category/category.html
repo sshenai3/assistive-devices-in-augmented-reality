@@ -6,6 +6,7 @@
         <title>adl-category</title>
         <link rel="stylesheet" href="./style/style.css"/>
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
     </head>
 
@@ -13,9 +14,55 @@
 
 <div class="parallax-landing-container">
 
+    <!--top-menu-->
+
+
+    <div class="container-header">
+
+        <div id="body-container">
+            
+            <nav class="navbar">
+                <span class="navbar-toggle" id="js-navbar-toggle">
+                    <i class="fa fa-bars"></i>
+                </span>
+                <a href="#" class="logo">
+                    <img src="../images/icon-adr.png" style="width: 40%;"></img>
+                </a>
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="../index.html" class="nav-links">Home</a>
+                    </li>
+                    <li>
+                        <a href="../index.html" class="nav-links">About</a>
+                    </li>
+                    <li>
+                        <a href="../index.html" class="nav-links">Product categories</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-links" style="background: rgba(255, 175, 80, 0.2); border: 1px solid #FFAF50; padding: 10px 15px; border-radius:5px; display:none;">Assessment List</a>
+                    </li>
+                </ul>
+            </nav>
+    
+        </div>
+    
+    
+        </div>
+    
+    
+    
+        <!--body container-->
+
+
     <div id="body-container">
+
+        <!--breadcrumb for product page-->
+        <ul class="breadcrumb-links">
+            <li><a href="../index.html">Home</a></li>
+            <li style="color: #006499;"><b>Product Category</b></li>
+            <li style="color: #006499;"><b>Meal Prep</b></li>
+        </ul>
         
-        <div class="container-header"></div>
 
         <div class="title-row" style="margin: 50px 0;"><h1>Meal Preparation</h1></div>
 
@@ -219,14 +266,14 @@
             <div id="container-btn" style="margin: 50px 0;">
             
             
-                <div class="container-text" style=";"><h3>Biomechanical area of need</h3></div>
+                <div class="container-text" style=";"><h3>Characteristics of physical ailments</h3></div>
     
                 <button class="btn active" onclick="filterSelection('all')"> Show all</button>
     
                 <button class="btn" onclick="filterSelection('muscle')">Muscle Weakness</button>
                 <button class="btn" onclick="filterSelection('tremors')">Tremors</button>
                 <button class="btn" onclick="filterSelection('spasticity')">Spasticity</button>
-                <button class="btn" onclick="filterSelection('hypotonia')">Hypotonia</button>
+                <button class="btn" onclick="filterSelection('hypotonia')" style="display:none;">Hypotonia</button>
                 <button class="btn" onclick="filterSelection('chronic')">Chronic pain</button>
     
             </div>
@@ -238,164 +285,158 @@
         
                 <div class="container-filter">
         
-                    <div class="filterProd muscle">
-                        <div class="prod-img">
-                            <img src=""></img>
+                    <div class="filterProd spasticity tremors">
+                        <div class="prod-img1">
                         </div>
                         
                         <div class="product-name">
-                            <h2>Cook Muscle</h2>
+                            <h2>Goog grips jar opener</h2>
                         </div>
         
                         <div class="product-code">
-                            <h4>Product Code</h4>
+                            <h4>Product Code: NC28199</h4>
                         </div>
         
                         <div class="product-des">
-                            <p>This is a Product Description, this is a brief Product Description.</p>
+                            <p>The comfortable, non-slip, built-up handle helps open and twist off stubborn lids easily.</p>
                         </div>
         
-                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
+                        <button class="prod-btn" onclick="location.href='../product-pages/product-cooking-1/product-c1.html'" type="button">VIEW THIS PRODUCT</button>
         
                         <hr class="cat-separation">
         
                         <div class="product-material">
-                            <h4>Materials/ Dimentsions/ Weight</h4>
+                            <h4>Stainless Steel / 9*5*1 in / 4oz</h4>
                         </div>
                     </div>
         
         
-                    <div class="filterProd tremors">
-                        <div class="prod-img">
-                            <img src=""></img>
+                    <div class="filterProd muscle tremors chronic">
+                        <div class="prod-img2">
                         </div>
                         
                         <div class="product-name">
-                            <h2>Cook Tremors</h2>
+                            <h2>Food preparation board</h2>
                         </div>
         
                         <div class="product-code">
-                            <h4>Product Code</h4>
+                            <h4>Product Code: APE100</h4>
                         </div>
         
                         <div class="product-des">
-                            <p>This is a Product Description, this is a brief Product Description.</p>
+                            <p>Multi-purpose board for fine and course grating, slicing, peeling.</p>
                         </div>
         
-                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
+                        <button class="prod-btn" onclick="location.href='../product-pages/product-cooking-1/product-c2.html'" type="button">VIEW THIS PRODUCT</button>
         
                         <hr class="cat-separation">
         
                         <div class="product-material">
-                            <h4>Materials/ Dimentsions/ Weight</h4>
+                            <h4>Rubberwood / 17.32*11.81*2.16 in / 6.17lbs</h4>
                         </div>
                     </div>
         
         
-                    <div class="filterProd spasticity">
-                        <div class="prod-img">
-                            <img src=""></img>
+                    <div class="filterProd muscle tremors">
+                        <div class="prod-img3">
                         </div>
                         
                         <div class="product-name">
-                            <h2>Cook Spasticity</h2>
+                            <h2>Rocking T Knife</h2>
                         </div>
         
                         <div class="product-code">
-                            <h4>Product Code</h4>
+                            <h4>Product Code: AKT107</h4>
                         </div>
         
                         <div class="product-des">
-                            <p>This is a Product Description, this is a brief Product Description.</p>
+                            <p>An adaptive kitchen rocker knife for cutting variety of food.</p>
                         </div>
         
-                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
+                        <button class="prod-btn" onclick="location.href='../product-pages/product-cooking-1/product-c3.html'" type="button">VIEW THIS PRODUCT</button>
         
                         <hr class="cat-separation">
         
                         <div class="product-material">
-                            <h4>Materials/ Dimentsions/ Weight</h4>
+                            <h4>Plastic, SS / length 4in / 6.17lbs</h4>
                         </div>
                     </div>
         
         
-                    <div class="filterProd hypotonia">
-                        <div class="prod-img">
-                            <img src=""></img>
+                    <div class="filterProd muscle tremors spasticity chronic">
+                        <div class="prod-img4">
                         </div>
                         
                         <div class="product-name">
-                            <h2>Cook Hypotonia</h2>
+                            <h2>One-handed cannister</h2>
                         </div>
         
                         <div class="product-code">
-                            <h4>Product Code</h4>
+                            <h4>Product Code: 753600000</h4>
                         </div>
         
                         <div class="product-des">
-                            <p>This is a Product Description, this is a brief Product Description.</p>
+                            <p>Easy to open 3 sets of storage cannisters requiring minimal hand strength.</p>
                         </div>
         
-                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
+                        <button class="prod-btn" onclick="location.href='../product-pages/product-cooking-1/product-c4.html'" type="button">VIEW THIS PRODUCT</button>
         
                         <hr class="cat-separation">
         
                         <div class="product-material">
-                            <h4>Materials/ Dimentsions/ Weight</h4>
+                            <h4>Plastic / 3 sizes 25oz, 45oz, 67oz</h4>
                         </div>
                     </div>
         
         
-                    <div class="filterProd chronic">
-                        <div class="prod-img">
-                            <img src=""></img>
+                    <div class="filterProd tremors spasticity chronic">
+                        <div class="prod-img5">
                         </div>
                         
                         <div class="product-name">
-                            <h2>Cook Chronic</h2>
+                            <h2>Non-slip jar opener</h2>
                         </div>
         
                         <div class="product-code">
-                            <h4>Product Code</h4>
+                            <h4>Product Code: AMI7535812</h4>
                         </div>
         
                         <div class="product-des">
-                            <p>This is a Product Description, this is a brief Product Description.</p>
+                            <p>The Finger Guard that protects users while using sharp knives for cooking preparation.</p>
                         </div>
         
-                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
+                        <button class="prod-btn" onclick="location.href='../product-pages/product-cooking-1/product-c5.html'" type="button">VIEW THIS PRODUCT</button>
         
                         <hr class="cat-separation">
         
                         <div class="product-material">
-                            <h4>Materials/ Dimentsions/ Weight</h4>
+                            <h4>Soft rubber / 5*2 in</h4>
                         </div>
                     </div>
         
         
-                    <div class="filterProd muscle">
-                        <div class="prod-img">
-                            <img src=""></img>
+                    <div class="filterProd muscle chronic">
+                        <div class="prod-img6">
                         </div>
                         
                         <div class="product-name">
-                            <h2>Cook Muscle</h2>
+                            <h2>Adapted cutting board</h2>
                         </div>
         
                         <div class="product-code">
-                            <h4>Product Code</h4>
+                            <h4>Product Code: NC28502</h4>
                         </div>
         
                         <div class="product-des">
-                            <p>This is a Product Description, this is a brief Product Description.</p>
+                            <p>A unique cutting board with vice grip securely holds food for one hand meal preparation.</p>
                         </div>
         
-                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
+                        <button class="prod-btn" onclick="location.href='../product-pages/product-cooking-1/product-c6.html'" type="button">View This Product</button>
         
                         <hr class="cat-separation">
         
                         <div class="product-material">
-                            <h4>Materials/ Dimentsions/ Weight</h4>
+                            <h4>Polystyrene, SS / 12*11 in / 3lbs</h4>
                         </div>
                     </div>
         
@@ -410,164 +451,54 @@
                         
                 <div class="container-filter">
         
-                    <div class="filterProd muscle">
-                        <div class="prod-img">
-                            <img src=""></img>
+                    <div class="filterProd muscle chronic">
+                        <div class="prod-img-eat1">
                         </div>
                         
                         <div class="product-name">
-                            <h2>Eat Muscle</h2>
+                            <h2>Utensil hand clip</h2>
                         </div>
         
                         <div class="product-code">
-                            <h4>Product Code</h4>
+                            <h4>Product Code: CMI74615</h4>
                         </div>
         
                         <div class="product-des">
-                            <p>This is a Product Description, this is a brief Product Description.</p>
+                            <p>An eating aid for people who have trouble grasping and holding small utensils.</p>
                         </div>
         
-                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
+                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW THIS PRODUCT</button>
         
                         <hr class="cat-separation">
         
                         <div class="product-material">
-                            <h4>Materials/ Dimentsions/ Weight</h4>
+                            <h4>Plastic, vinyl / 5*1 in</h4>
                         </div>
                     </div>
         
         
-                    <div class="filterProd tremors">
-                        <div class="prod-img">
-                            <img src=""></img>
+                    <div class="filterProd tremors spasticity">
+                        <div class="prod-img-eat2">
                         </div>
                         
                         <div class="product-name">
-                            <h2>Eat Tremors</h2>
+                            <h2>Non-skid skoopy dish</h2>
                         </div>
         
                         <div class="product-code">
-                            <h4>Product Code</h4>
+                            <h4>Product Code: CBL100B</h4>
                         </div>
         
                         <div class="product-des">
-                            <p>This is a Product Description, this is a brief Product Description.</p>
+                            <p>An adapted dining plate with non-slip bottom helps make scooping food easier. </p>
                         </div>
         
-                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
+                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW THIS PRODUCT</button>
         
                         <hr class="cat-separation">
         
                         <div class="product-material">
-                            <h4>Materials/ Dimentsions/ Weight</h4>
-                        </div>
-                    </div>
-        
-        
-                    <div class="filterProd spasticity">
-                        <div class="prod-img">
-                            <img src=""></img>
-                        </div>
-                        
-                        <div class="product-name">
-                            <h2>Eat Spasticity</h2>
-                        </div>
-        
-                        <div class="product-code">
-                            <h4>Product Code</h4>
-                        </div>
-        
-                        <div class="product-des">
-                            <p>This is a Product Description, this is a brief Product Description.</p>
-                        </div>
-        
-                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
-        
-                        <hr class="cat-separation">
-        
-                        <div class="product-material">
-                            <h4>Materials/ Dimentsions/ Weight</h4>
-                        </div>
-                    </div>
-        
-        
-                    <div class="filterProd hypotonia">
-                        <div class="prod-img">
-                            <img src=""></img>
-                        </div>
-                        
-                        <div class="product-name">
-                            <h2>Eat Hypotonia</h2>
-                        </div>
-        
-                        <div class="product-code">
-                            <h4>Product Code</h4>
-                        </div>
-        
-                        <div class="product-des">
-                            <p>This is a Product Description, this is a brief Product Description.</p>
-                        </div>
-        
-                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
-        
-                        <hr class="cat-separation">
-        
-                        <div class="product-material">
-                            <h4>Materials/ Dimentsions/ Weight</h4>
-                        </div>
-                    </div>
-        
-        
-                    <div class="filterProd chronic">
-                        <div class="prod-img">
-                            <img src=""></img>
-                        </div>
-                        
-                        <div class="product-name">
-                            <h2>Eat Chronic</h2>
-                        </div>
-        
-                        <div class="product-code">
-                            <h4>Product Code</h4>
-                        </div>
-        
-                        <div class="product-des">
-                            <p>This is a Product Description, this is a brief Product Description.</p>
-                        </div>
-        
-                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
-        
-                        <hr class="cat-separation">
-        
-                        <div class="product-material">
-                            <h4>Materials/ Dimentsions/ Weight</h4>
-                        </div>
-                    </div>
-        
-        
-                    <div class="filterProd muscle">
-                        <div class="prod-img">
-                            <img src=""></img>
-                        </div>
-                        
-                        <div class="product-name">
-                            <h2>Eat Muscle</h2>
-                        </div>
-        
-                        <div class="product-code">
-                            <h4>Product Code</h4>
-                        </div>
-        
-                        <div class="product-des">
-                            <p>This is a Product Description, this is a brief Product Description.</p>
-                        </div>
-        
-                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW IN AUGMENTED REALITY</button>
-        
-                        <hr class="cat-separation">
-        
-                        <div class="product-material">
-                            <h4>Materials/ Dimentsions/ Weight</h4>
+                            <h4>ABS (bpa, latex free)/ 8*1.5 in / Weight</h4>
                         </div>
                     </div>
         
@@ -579,8 +510,63 @@
             <!--drinking-->
 
             <div id="Drinking" class="sub-container meal" style="display:none">
-                <h2>Drinking</h2>
-                <p>London is the capital city of England.</p>
+
+                <div class="container-filter">
+        
+                    <div class="filterProd muscle tremors spasticity chronic">
+                        <div class="prod-img-drink1">
+                        </div>
+                        
+                        <div class="product-name">
+                            <h2>Hands-free giraffe bottle</h2>
+                        </div>
+        
+                        <div class="product-code">
+                            <h4>Product Code: 504912</h4>
+                        </div>
+        
+                        <div class="product-des">
+                            <p>Drinking system with flexible necks to position the drinking tube near the mouth.</p>
+                        </div>
+        
+                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW THIS PRODUCT</button>
+        
+                        <hr class="cat-separation">
+        
+                        <div class="product-material">
+                            <h4>Trittan bottle (BPA and phthalate-free) / 20 oz</h4>
+                        </div>
+                    </div>
+
+                    <div class="filterProd muscle chronic">
+                        <div class="prod-img-drink2">
+                        </div>
+                        
+                        <div class="product-name">
+                            <h2>Easy Grip-In Mug</h2>
+                        </div>
+        
+                        <div class="product-code">
+                            <h4>Product Code: CRP002</h4>
+                        </div>
+        
+                        <div class="product-des">
+                            <p>Curved internal grip enables hand to fit through the mug, eliminating the need for grasping.</p>
+                        </div>
+        
+                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW THIS PRODUCT</button>
+        
+                        <hr class="cat-separation">
+        
+                        <div class="product-material">
+                            <h4>Polycarbonate (BPA and phthalate-free) / 16 oz</h4>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+
             </div>
 
 
@@ -588,17 +574,53 @@
             <!--cleaning-->
 
             <div id="Cleaning" class="sub-container meal" style="display:none">
-                <h2>Cleaning</h2>
-                <p>London is the capital city of England.</p>
+
+                <div class="container-filter">
+        
+                    <div class="filterProd muscle tremors spasticity chronic">
+                        <div class="prod-img-clean1">
+                        </div>
+                        
+                        <div class="product-name">
+                            <h2>One-Handed Bottle Brush</h2>
+                        </div>
+        
+                        <div class="product-code">
+                            <h4>Product Code: NC28222</h4>
+                        </div>
+        
+                        <div class="product-des">
+                            <p>With a suction base that keeps its brushes stationary when washing glasses and bottles.</p>
+                        </div>
+        
+                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW THIS PRODUCT</button>
+        
+                        <hr class="cat-separation">
+        
+                        <div class="product-material">
+                            <h4>Suction base / length 6 in</h4>
+                        </div>
+                    </div>
+                
+
+
             </div>
+
+
+            
 
         </div>
 
 
     
     </div>
+    </div>
 
-    <div class="container-footer"></div>
+    <!--container footer-->
+
+    <div class="container-footer">
+        <p>Copyright ©ShreyaShenai 2021</p>
+    </div>
 
 </div>
 
@@ -710,6 +732,16 @@
       document.getElementById(mealName).style.display = "block";
       evt.currentTarget.className += " btn-color";
     }
+</script>
+
+<!--script for navigation-->
+
+<script>
+    let mainNav = document.getElementById('js-menu');
+    let navBarToggle = document.getElementById('js-navbar-toggle');
+    navBarToggle.addEventListener('click', function () {
+    
+    mainNav.classList.toggle('active-icon');});
 </script>
 
     </body>

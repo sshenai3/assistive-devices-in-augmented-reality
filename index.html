@@ -6,15 +6,54 @@
         <title>adl</title>
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
     
 <div class="parallax-landing-container">
-    <div id="body-container">
-        <div class="container-header"></div>
+
+        <!--top-menu-->
+
+        <div class="container-header">
+
+            <div id="body-container">
+                
+                <nav class="navbar">
+                    <span class="navbar-toggle" id="js-navbar-toggle">
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a href="#" class="logo">
+                        <img src="images/icon-adr.png" style="width: 40%;"></img>
+                    </a>
+                    <ul class="main-nav" id="js-menu">
+                        <li>
+                            <a href="#" class="nav-links">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about-head-anchor" class="nav-links">About</a>
+                        </li>
+                        <li>
+                            <a href="#product-category-anchor" class="nav-links">Product categories</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-links" style="background: rgba(255, 175, 80, 0.2); border: 1px solid #FFAF50; padding: 10px 15px; border-radius:5px; display:none;">Assessment List</a>
+                        </li>
+                    </ul>
+                </nav>
         
-        <div class="container-about">
+            </div>
+        
+        
+            </div>
+
+
+<!--body container-->
+
+    <div id="body-container">
+
+        
+        <div class="container-about" style="display: none;">
             <div class="about-text">
                 <div class="container-text">
                     <h2>About ADLs</h2>
@@ -27,63 +66,180 @@
             <div class="about-image"></div>
         </div>
 
+
+<!--container banner-->
+        <div class="container-banner">
+            <div class="banner-image"></div>
+            <div class="banner-text">
+                <div class="container-text">
+                    <h2>Assistive devices</h2>
+                </div>
+                <div class="container-para">
+                    <p>Assistive device is a specially designed device to assist people who have difficulty to perform activities of daily living. It can be applied in different situations, including dressing, feeding, toileting, bathing, grooming, household activities) and mobility (lifting and transfer). Commonly used devices can be classified into these categories.</p>
+                </div>
+            </div>
+        </div>
+        <div class="credit-text" style="color: white;">
+            <i class="fa fa-heart" style="font-size: 12px; color:white; margin-right: 6px;"></i><a target="_blank" href="https://www.presby.edu/academics/graduate-professional/occupational-therapy-doctoral-program/">Image Credits</a>
+        </div>
+
+
+<!--container welcome-->
     <div class="container-welcome">
         <div class="welcome-head">
-            <div class="container-text">
-                <h2>Welcome</h2>
+            <div id="about-head-anchor" class="container-text">
+                <h2>What is ADR?</h2>
             </div>
         </div>
         <div class="welcome-para">
             <div class="container-para">
-                <p>This is a web directory for low technology Assisitive devices of daily living. Here you will find a collection of ADL products and resources refined with all categories and also viewable through augmented Reality helping you visualize these ADLs.</p>
+                <p>ADR (assistive device resource) is a web directory/ resource focused towards Assisitive Devices for Activities of Daily Living (ADLs). Here you will find a collection of assistive devices refined with all categories and also viewable through augmented Reality helping you visualize these products.</p>
+            </div>
+        </div>
+        <div class="welcome-features">
+            <div class="wel-feat">
+                <img class="feat-icon1" src="images/icon-folder.png"></img>
+                <div class="icon-para">
+                    <p>Assistive device resources for Activities of Daily Living</p>
+                </div>
+            </div>
+            <div class="wel-feat">
+                <img class="feat-icon1" src="images/icon-ar.png"></img>
+                <div class="icon-para">
+                    <p>Products viewable in augmented reality</p>
+                </div>
+            </div>
+            <div class="wel-feat">
+                <img class="feat-icon1" src="images/icon-3d.png"></img>
+                <div class="icon-para">
+                    <p>3D files for assisitve devices</p>
+                </div>
             </div>
         </div>
     </div>
+    <div class="credit-text" style="color: white; text-align: left; margin-top: 20px;">
+        <i class="fa fa-heart" style="font-size: 12px; color:white; margin-right: 6px;"></i>Image Credits: <a target="_blank" href="https://icons8.com/icon/3509/opened-folder">Opened Folder icon</a>, <a target="_blank" href="https://icons8.com/icon/98111/3d-model">3D Model icon</a>, <a target="_blank" href="https://icons8.com/icon/82474/augmented-reality">Augmented Reality icon</a> by Icons8
+    </div>
+    
 
-    <div class="title-row"><h1>Product Search Categories</h1></div>
+    <hr class="cat-separation" style="border-top: 1px solid #D3DFE6;">
+
+    <div class="title-row" style="display: none;"><h1>Product Search Categories</h1></div>
+
+    <div id="product-category-anchor" class="container-text" style="text-align: center; margin-top: 50px; "><h2>Product Search Categories</h2></div>
 
 
     <div class="container-categories">
         <div class="category1">
-            <div class="category1-image"></div>
+            <div class="category1-image">
+                <div class="prod-img1"></div>
+            </div>
             <div class="category1-description">
                 <div class="des-head">
-                    <h2>Category 1</h2>
+                    <h2>Meal Preparation</h2>
                 </div>
                 <div class="container-para">
-                    <p>Assistive device is a specially designed device to assist people who have difficulty to perform activities of daily living. It can be applied in different situations, including dressing, feeding, toileting, bathing, grooming, household activities) and mobility (lifting and transfer). Commonly used devices can be classified into these categories.</p>
+                    <p>Assisitve devices related to planning, preparing, and serving meals and cleaning up food and tools (e.g., utensils, pots, plates) after meals. These are categorized under cooking, eating, drinking, and cleaning.</p>
                 </div>
-                <button class="btn1" onclick="location.href='#'" type="button">VIEW MORE</button>
+                <button class="btn1" onclick="location.href='./category/category.html'" type="button">VIEW MORE</button>
             </div>
+        </div>
+        <div class="credit-text" style="color: white;">
+            <i class="fa fa-heart" style="font-size: 12px; color:white; margin-right: 6px;"></i><a target="_blank" href="https://unsplash.com/@conscious_design?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Image Credits</a>
         </div>
 
         <hr class="cat-separation">
 
         <div class="category1">
-            <div class="category1-image"></div>
+            <div class="category1-image">
+                <div class="prod-img2"></div>
+            </div>
             <div class="category1-description">
                 <div class="des-head">
-                    <h2>Category 1</h2>
+                    <h2>Personal Hygiene</h2>
                 </div>
                 <div class="container-para">
-                    <p>Assistive device is a specially designed device to assist people who have difficulty to perform activities of daily living. It can be applied in different situations, including dressing, feeding, toileting, bathing, grooming, household activities) and mobility (lifting and transfer). Commonly used devices can be classified into these categories.</p>
+                    <p>Assisitve devices are categorized for actvities related to maintaining personal hygiene such as Bathing/ Showering (using supplies, soaping, rinsing, and drying body parts, etc), Grooming (washing, drying, combing, styling, brushing, and trimming hair; caring for nails, etc), Oral Care (brushing and flossing teeth, removing, cleaning, and reinserting dental orthotics and prosthetics, etc) and Toiletting (using toileting supplies, managing clothing, cleaning body, etc).</p>
                 </div>
-                <button class="btn1" onclick="location.href='#'" type="button">VIEW MORE</button>
+                <button class="btn1" onclick="location.href='./category/category-1.html'" type="button">VIEW MORE</button>
             </div>
+        </div>
+        <div class="credit-text" style="color: white;">
+            <i class="fa fa-heart" style="font-size: 12px; color:white; margin-right: 6px;"></i><a target="_blank" href="https://unsplash.com/@nate_dumlao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Image Credits</a>
         </div>
 
         <hr class="cat-separation">
+
+
+        <div class="category1">
+            <div class="category1-image">
+                <div class="prod-img3"></div>
+            </div>
+            <div class="category1-description">
+                <div class="des-head">
+                    <h2>Dressing and Undressing</h2>
+                </div>
+                <div class="container-para">
+                    <p>Assistive devices related to selecting clothing and accessories; obtaining clothing from storage area; dressing and undressing in a sequential fashion; fastening and adjusting clothing and shoes; applying and removing personal devices, prosthetic devices, or splints.</p>
+                </div>
+                <button class="btn1" onclick="location.href='./category/category-2.html'" type="button">VIEW MORE</button>
+            </div>
+        </div>
+        <div class="credit-text" style="color: white;">
+            <i class="fa fa-heart" style="font-size: 12px; color:white; margin-right: 6px;"></i><a target="_blank" href="https://unsplash.com/@kimdonkey?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Image Credits</a>
+        </div>
+
+        <hr class="cat-separation">
+
+
+        <div class="category1">
+            <div class="category1-image">
+                <div class="prod-img4"></div>
+            </div>
+            <div class="category1-description">
+                <div class="des-head">
+                    <h2>Functional Mobility/ Positioning</h2>
+                </div>
+                <div class="container-para">
+                    <p>Assisitve devices related to added accessories (for wheelchair, cane, etc), in-home mobility, community mobility, transfers. Moving from one position or place to another (during performance of everyday activities), such as in-bed mobility, wheelchair mobility, and transfers (e.g., wheelchair, bed, car, shower, tub, toilet, chair, floor).</p>
+                </div>
+                <button class="btn1" onclick="location.href='./category/category-3.html'" type="button">VIEW MORE</button>
+            </div>
+        </div>
+        <div class="credit-text" style="color: white;">
+            <i class="fa fa-heart" style="font-size: 12px; color:white; margin-right: 6px;"></i><a target="_blank" href="https://www.mobility-aids.com/assets/newimages/mobility_aids_header.jpg">Image Credits</a>
+        </div>
+
+        <hr class="cat-separation">
+
+
+
+
     </div>
 
-        <div class="adlar1" style="display: none;">
-            <iframe id="0dbcf630-b8b8-49fe-a33a-b015272d3a1e" src="https://www.vectary.com/viewer/v1/?model=0dbcf630-b8b8-49fe-a33a-b015272d3a1e&env=studio3" frameborder="0" width="100%" height="480"></iframe>
-        </div>
-        
-        <div class="container-header" style="display: none;">
-            <img style="max-width: 50%;" src="./images/Frame 4.png" />
-        </div>
+
     
     </div>
+
+
+    <!--container footer-->
+
+    <div class="container-footer">
+        <p>Copyright ©ShreyaShenai 2021</p>
+    </div>
+
+
 </div>
-    </body>
+
+<!--script for navigation-->
+
+<script>
+    let mainNav = document.getElementById('js-menu');
+    let navBarToggle = document.getElementById('js-navbar-toggle');
+    navBarToggle.addEventListener('click', function () {
+    
+    mainNav.classList.toggle('active-icon');});
+</script>
+
+</body>
 </html>

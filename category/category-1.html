@@ -1,1 +1,486 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>adl-category</title>
+        <link rel="stylesheet" href="./style/style-1.css"/>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+
+    <body>
+
+<div class="parallax-landing-container">
+
+    <!--top-menu-->
+
+
+    <div class="container-header">
+
+        <div id="body-container">
+            
+            <nav class="navbar">
+                <span class="navbar-toggle" id="js-navbar-toggle">
+                    <i class="fa fa-bars"></i>
+                </span>
+                <a href="#" class="logo">
+                    <img src="../images/icon-adr.png" style="width: 40%;"></img>
+                </a>
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="../index.html" class="nav-links">Home</a>
+                    </li>
+                    <li>
+                        <a href="../index.html" class="nav-links">About</a>
+                    </li>
+                    <li>
+                        <a href="../index.html" class="nav-links">Product categories</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-links" style="background: rgba(255, 175, 80, 0.2); border: 1px solid #FFAF50; padding: 10px 15px; border-radius:5px; display:none;">Assessment List</a>
+                    </li>
+                </ul>
+            </nav>
+    
+        </div>
+    
+    
+        </div>
+
+
+        <!--body container-->
+
+    <div id="body-container">
+
+        <!--breadcrumb for product page-->
+        <ul class="breadcrumb-links">
+            <li><a href="../index.html">Home</a></li>
+            <li style="color: #006499;"><b>Product Category</b></li>
+            <li style="color: #006499;"><b>Personal Hygiene</b></li>
+        </ul>
+        
+
+        <div class="title-row" style="margin: 50px 0;"><h1>Personal Hygiene</h1></div>
+
+        
+
+<!--sub-container-->
+        <div class="sub-container">
+
+            <div class="sub-bar">
+                <button class="sub-button tablink btn-color" onclick="openCity(event,'Cooking')">Bathing/ Showering</button>
+                <button class="sub-button tablink" onclick="openCity(event,'Eating')">Grooming</button>
+                <button class="sub-button tablink" onclick="openCity(event,'Drinking')">Oral Care</button>
+                <button class="sub-button tablink" onclick="openCity(event,'Cleaning')">Toiletting</button>
+            </div>
+
+            <!--sub-sub-links-->
+
+            <div id="container-btn" style="margin: 50px 0;">
+            
+            
+                <div class="container-text" style=";"><h3>Characteristics of physical ailments</h3></div>
+    
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    
+                <button class="btn" onclick="filterSelection('muscle')">Muscle Weakness</button>
+                <button class="btn" onclick="filterSelection('tremors')">Tremors</button>
+                <button class="btn" onclick="filterSelection('spasticity')">Spasticity</button>
+                <button class="btn" onclick="filterSelection('hypotonia')" style="display:none;">Hypotonia</button>
+                <button class="btn" onclick="filterSelection('chronic')">Chronic pain</button>
+    
+            </div>
+
+            <!--cooking-->
+
+            <div id="Cooking" class="sub-container meal">
+                
+        
+                <div class="container-filter">
+        
+                    <div class="filterProd spasticity tremors hypotonia">
+                        <div class="prod-img1">
+                        </div>
+                        
+                        <div class="product-name">
+                            <h2>Bendable Bath Sponges</h2>
+                        </div>
+        
+                        <div class="product-code">
+                            <h4>Product Code: ADP201R</h4>
+                        </div>
+        
+                        <div class="product-des">
+                            <p>Handles can be bent to the angle the user needs to reach their back easily.</p>
+                        </div>
+        
+                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW THIS PRODUCT</button>
+        
+                        <hr class="cat-separation">
+        
+                        <div class="product-material">
+                            <h4>Polyfoam sponge / 17.5 in / 3.5oz</h4>
+                        </div>
+                    </div>
+        
+        
+                    <div class="filterProd muscle tremors chronic">
+                        <div class="prod-img2">
+                        </div>
+                        
+                        <div class="product-name">
+                            <h2>Portable Hand Sprayer</h2>
+                        </div>
+        
+                        <div class="product-code">
+                            <h4>Product Code: NC28324</h4>
+                        </div>
+        
+                        <div class="product-des">
+                            <p>Easy to reach portable shower converts a tub spout to a hand held shower.</p>
+                        </div>
+        
+                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW THIS PRODUCT</button>
+        
+                        <hr class="cat-separation">
+        
+                        <div class="product-material">
+                            <h4>Hose measures 5 ft long</h4>
+                        </div>
+                    </div>
+        
+        
+        
+                </div>
+            </div>
+
+
+            <!--eating-->
+
+            <div id="Eating" class="sub-container meal" style="display:none">
+                        
+                <div class="container-filter">
+        
+                    <div class="filterProd muscle chronic">
+                        <div class="prod-img-eat1">
+                        </div>
+                        
+                        <div class="product-name">
+                            <h2>Long handle hair brush</h2>
+                        </div>
+        
+                        <div class="product-code">
+                            <h4>Product Code: NC28372</h4>
+                        </div>
+        
+                        <div class="product-des">
+                            <p>An ergonomic anti-slip handle brush having firm curved bristles.</p>
+                        </div>
+        
+                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW THIS PRODUCT</button>
+        
+                        <hr class="cat-separation">
+        
+                        <div class="product-material">
+                            <h4>Polypropylene / 12 in</h4>
+                        </div>
+                    </div>
+        
+        
+                    <div class="filterProd tremors spasticity">
+                        <div class="prod-img-eat2">
+                        </div>
+                        
+                        <div class="product-name">
+                            <h2>Beauty multipurpose grip</h2>
+                        </div>
+        
+                        <div class="product-code">
+                            <h4>Product Code: E80210082</h4>
+                        </div>
+        
+                        <div class="product-des">
+                            <p>Helps people with weak or stiff fingers to use nail files, razors, or toothbrushes.</p>
+                        </div>
+        
+                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW THIS PRODUCT</button>
+        
+                        <hr class="cat-separation">
+        
+                        <div class="product-material">
+                            <h4>Polypropylene-based TPE / 11 cm length / 1.6 oz</h4>
+                        </div>
+                    </div>
+        
+        
+                </div>
+            </div>
+
+
+            <!--drinking-->
+
+            <div id="Drinking" class="sub-container meal" style="display:none">
+
+                <div class="container-filter">
+        
+                    <div class="filterProd tremors spasticity chronic">
+                        <div class="prod-img-drink1">
+                        </div>
+                        
+                        <div class="product-name">
+                            <h2>Floss Aid</h2>
+                        </div>
+        
+                        <div class="product-code">
+                            <h4>Product Code: CMI201</h4>
+                        </div>
+        
+                        <div class="product-des">
+                            <p>Fork-shaped handle to make easy for users to reach all teeth and keeps floss taut when in use.</p>
+                        </div>
+        
+                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW THIS PRODUCT</button>
+        
+                        <hr class="cat-separation">
+        
+                        <div class="product-material">
+                            <h4>6 in long</h4>
+                        </div>
+                    </div>
+
+                    <div class="filterProd muscle chronic">
+                        <div class="prod-img-drink2">
+                        </div>
+                        
+                        <div class="product-name">
+                            <h2>Tube Squeezer</h2>
+                        </div>
+        
+                        <div class="product-code">
+                            <h4>Product Code: AMI222</h4>
+                        </div>
+        
+                        <div class="product-des">
+                            <p>Squeezes tubes flat for toothpastes, lotions, salves, silicone, other household products.</p>
+                        </div>
+        
+                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW THIS PRODUCT</button>
+        
+                        <hr class="cat-separation">
+        
+                        <div class="product-material">
+                            <h4>2.5*3*0.75 in</h4>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+
+            </div>
+
+
+
+            <!--cleaning-->
+
+            <div id="Cleaning" class="sub-container meal" style="display:none">
+
+                <div class="container-filter">
+        
+                    <div class="filterProd muscle tremors spasticity chronic">
+                        <div class="prod-img-clean1">
+                        </div>
+                        
+                        <div class="product-name">
+                            <h2>Easy wipe toiletting aid</h2>
+                        </div>
+        
+                        <div class="product-code">
+                            <h4>Product Code: ABK211</h4>
+                        </div>
+        
+                        <div class="product-des">
+                            <p>Long handle toilet aid enables users to effectively dispose of tissue with a push button.</p>
+                        </div>
+        
+                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW THIS PRODUCT</button>
+        
+                        <hr class="cat-separation">
+        
+                        <div class="product-material">
+                            <h4>Silicone (latex free) / 15 in / 0.4 lbs</h4>
+                        </div>
+                    </div>
+
+
+                    <div class="filterProd muscle tremors spasticity chronic">
+                        <div class="prod-img-clean2">
+                        </div>
+                        
+                        <div class="product-name">
+                            <h2>Pocket toiletting aid</h2>
+                        </div>
+        
+                        <div class="product-code">
+                            <h4>Product Code: ABK212</h4>
+                        </div>
+        
+                        <div class="product-des">
+                            <p>A range of folding bottom wiper designed to easily fit in a person’s pocket or handbag.</p>
+                        </div>
+        
+                        <button class="prod-btn" onclick="location.href='#'" type="button">VIEW THIS PRODUCT</button>
+        
+                        <hr class="cat-separation">
+        
+                        <div class="product-material">
+                            <h4>Silicone (latex free) / 15 in / 2.86 oz</h4>
+                        </div>
+                    </div>
+                
+
+
+            </div>
+
+
+            
+
+        </div>
+
+
+    
+    </div>
+    </div>
+
+    <!--container footer-->
+
+    <div class="container-footer">
+        <p>Copyright ©ShreyaShenai 2021</p>
+    </div>
+
+</div>
+
+<!--script for filter buttons-->
+<script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterProd");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("container-btn");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+
+    <!--script for filter buttons - eating-->
+<script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterProd");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("container-btn");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+    
+
+<!--script for sub-container-->
+<script>
+    function openCity(evt, mealName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("meal");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" btn-color", "");
+      }
+      document.getElementById(mealName).style.display = "block";
+      evt.currentTarget.className += " btn-color";
+    }
+</script>
+
+<!--script for navigation-->
+
+<script>
+    let mainNav = document.getElementById('js-menu');
+    let navBarToggle = document.getElementById('js-navbar-toggle');
+    navBarToggle.addEventListener('click', function () {
+    
+    mainNav.classList.toggle('active-icon');});
+</script>
+
+    </body>
 
