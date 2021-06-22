@@ -1,1 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>adl-category</title>
+        <link rel="stylesheet" href="./style/view-instructions.css"/>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+
+    <body>
+
+<div class="parallax-landing-container">
+
+    <!--top-menu-->
+
+
+    <div class="container-header">
+
+    <div id="body-container">
+        
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fa fa-bars"></i>
+            </span>
+            <a href="../../index.html" class="logo">
+                <img src="../../images/icon-adr.png" style="width: 40%;"></img>
+            </a>
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="../../index.html" class="nav-links">Home</a>
+                </li>
+                <li>
+                    <a href="../../index.html" class="nav-links">About</a>
+                </li>
+                <li>
+                    <a href="../../index.html" class="nav-links">Product categories</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links" style="background: rgba(255, 175, 80, 0.2); border: 1px solid #FFAF50; padding: 10px 15px; border-radius:5px; display:none;">Assessment List</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+
+
+    </div>
+
+
+
+    <!--body container-->
+
+    <div id="body-container">
+
+    
+        <div class="title-row" style="margin: 50px 0;"><h1>Instructions</h1></div>
+
+
+        <div class="ins-details">
+            <div class="ins-head">
+                <h4>Instructions for viewing the object in the 3D viewer:</h4>
+            </div>
+            <ul class="ins-para">
+                <li>View, zoom and rotate the composition in your desktop browser:
+                    <ul style="margin-top: 10px;">
+                        <li>Rotate using left-long click + drag the side of the object you want to view./li>
+                        <li>Zoom using Ctrl + middle scroll to zoom in and out to view the details of the object.</li>
+                      </ul>
+                </li>
+                <li>View and rotate the composition on your phone browser by finger sliding or dragging the object.</li>
+            </ul>
+        </div>
+
+        <div class="ins-details">
+            <div class="ins-head">
+                <h4>Instructions for viewing the object in AR through a web browser:</h4>
+            </div>
+            <ul class="ins-para">
+                <li>Click on the Icon at the top right corner of the AR window screen and a QR code will appear.</li>
+                <li>Point your phone camera at the scan code to see the object window appear.</li>
+                <li>Choose Object mode to see the 3D view of the object using simple gestures like zoom, rotate using the pinch of your fingers.</li>
+                <li>Choose AR mode and follow instructions that appear on the screen.</li>
+            </ul>
+        </div>
+
+        <div class="ins-details">
+            <div class="ins-head">
+                <h4>Instructions for viewing the object in AR through a smartphone/ tablet:</h4>
+            </div>
+            <ul class="ins-para" style="padding-bottom: 80px;">
+                <li>Tap on the Icon at the top right corner of the AR window screen and this will take you to another screen to view the object in AR.</li>
+                <li>Choose AR mode and follow instructions that appear on the screen.</li>
+                <li>Choose Object mode to see the 3D view of the object using simple gestures like zoom, rotate using the pinch of your fingers.</li>
+            </ul>
+        </div>
+
+        
+
+    </div>
+    </div>
+
+    <!--container footer-->
+
+    <div class="container-footer">
+        <p>Copyright ©ShreyaShenai 2021</p>
+    </div>
+
+</div>
+
+<!--script for filter buttons-->
+<script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterProd");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("container-btn");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+
+    <!--script for filter buttons - eating-->
+<script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterProd");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("container-btn");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+    
+
+<!--script for sub-container-->
+<script>
+    function openCity(evt, mealName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("meal");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" btn-color", "");
+      }
+      document.getElementById(mealName).style.display = "block";
+      evt.currentTarget.className += " btn-color";
+    }
+</script>
+
+
+<!--script for navigation-->
+
+<script>
+    let mainNav = document.getElementById('js-menu');
+    let navBarToggle = document.getElementById('js-navbar-toggle');
+    navBarToggle.addEventListener('click', function () {
+    
+    mainNav.classList.toggle('active-icon');});
+</script>
+
+
+    </body>
+
+
 
