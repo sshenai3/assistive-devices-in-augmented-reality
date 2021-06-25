@@ -222,7 +222,10 @@ margin: 50px 0;
       padding: 20px;
 
       position: absolute;
-      translate: 20px 80px;
+      /* translate: 20px 80px;*/
+
+      align-self: center;
+      margin: 30px;
   }
 
   /*end of container banner*/
@@ -515,7 +518,7 @@ margin: 50px 0;
 
     .banner-text{
         width: 70%;
-        translate: 20px 40px;
+        /* translate: 20px 40px; */
     }
 
     .container-welcome{
